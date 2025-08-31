@@ -8,7 +8,7 @@ The main goal of this project was to understand and implement OFDFT for a single
 
 This project required me to learn a lot about DFT, which was something I hadn't covered in my course modules. I created the document ```Background_Theory.pdf``` to explain how DFT and OFDFT work and how it applies to my project. 
 
-Over the course of this project, I learned not only about DFT but also about some advanced numerical methods. I found that this particular type of non-linear numerical minimization was quite different to the kinds of problems I had solved previously. Despite being unfamiliar, the way it works is quite simple, so I created the document ```OFDFT_Algorithms.pdf``` to explain some of the methods. The literature specifically focused on the OFDFT minimization algorithm was sparse and spread out over the course of decades, so I wanted to summarise all the techniques here and clear up any confusions about them in a single document. 
+Over the course of this project, I learned not only about DFT but also about some advanced numerical methods. I found that this particular type of non-linear numerical minimization was quite different to the kinds of problems I had solved previously. Despite being unfamiliar, the way it works in principle is quite simple, so I created the document ```OFDFT_Algorithms.pdf``` to explain some of the methods. The literature specifically focused on the OFDFT minimization algorithm was sparse and spread out over the course of decades, so I wanted to summarise all the techniques here and clear up any confusions about them in a single document. 
 
 ## Installation
 To see the minimization algorithm in Python, simply download ```Minimization Algorithm.ipynb``` and run it on anything that can open .ipynb files. The minimum requirements are Python 3.9+, numpy, scipy and matplotlib. All the required functions are defined within the notebook.
@@ -31,4 +31,4 @@ To see the minimization algorithm in Python, simply download ```Minimization Alg
 One of the main findings of this project was the instability of the vW functional in this setting, which is discussed in my thesis. If you change the initial guess and external potential in my code, you'll likely find that the algorithm usually becomes unstable before converging on the solution to Schrodinger equation. Any ways of automating the search for stable step sizes or automatically adjusting the convergence conditions for different potentials and initial guesses could help make the density more consistently converge on the target solution. 
 
 ## Contact
-Email **Marc Lane** - lanem2@tcd.ie
+Email: **Marc Lane** - lanem2@tcd.ie
